@@ -4,7 +4,7 @@ A containerized Kubernetes controller/operator that monitors and manages workloa
 
 **📌 CleanStart Foundation:** Security-hardened, minimal base OS designed for enterprise containerized environments.
 
-**Image Path:** `cleanstart/wave`
+**Image Path:** `ghcr.io/cleanstart-containers/wave`
 
 **Registry:** CleanStart Registry
 
@@ -14,7 +14,7 @@ A containerized Kubernetes controller/operator that monitors and manages workloa
 
 Wave is a Kubernetes operator that watches and manages key cluster resources, providing automation and monitoring capabilities for Deployments, DaemonSets, and StatefulSets. It operates as a cluster-scoped controller, continuously monitoring resource changes and maintaining desired state across namespaces. This Wave container is part of the CleanStart application suite, featuring enterprise-grade security hardening, automated vulnerability management, and compliance with industry standards.
 
-**Image:** `cleanstart/wave:latest-dev`
+**Image:** `ghcr.io/cleanstart-containers/wave:latest-dev`
 
 **Key Specifications:**
 - **Binary Location:** `/usr/bin/wave`
@@ -92,15 +92,15 @@ Wave is deployed as a Kubernetes controller that:
 
 ### Pull Commands
 ```bash
-docker pull cleanstart/wave:latest
-docker pull cleanstart/wave:latest-dev
+docker pull ghcr.io/cleanstart-containers/wave:latest
+docker pull ghcr.io/cleanstart-containers/wave:latest-dev
 ```
 
 ### Run Commands
 
 Basic run:
 ```bash
-docker run -it --name wave-test cleanstart/wave:latest-dev
+docker run -it --name wave-test ghcr.io/cleanstart-containers/wave:latest-dev
 ```
 
 Production deployment:
@@ -109,7 +109,7 @@ docker run -d --name wave-prod \
   --read-only \
   --security-opt=no-new-privileges \
   --user 1000:1000 \
-  cleanstart/wave:latest
+  ghcr.io/cleanstart-containers/wave:latest
 ```
 
 ---
@@ -185,8 +185,8 @@ CleanStart images support multiple architectures to ensure compatibility across 
 
 ### Architecture-based Pull Commands
 ```bash
-docker pull --platform linux/amd64 cleanstart/wave:latest
-docker pull --platform linux/arm64 cleanstart/wave:latest
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/wave:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/wave:latest
 ```
 
 ---
