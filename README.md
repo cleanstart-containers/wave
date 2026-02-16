@@ -204,7 +204,7 @@ For deployment instructions, testing procedures, and troubleshooting guides, see
 - **Official Documentation:** https://wave.pusher.com/docs/
 - **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/wave
 - **Docker Hub:** https://hub.docker.com/r/cleanstart/wave
-- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart All Images:** https://images.cleanstart.com/images/wave/details
 - **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ---
